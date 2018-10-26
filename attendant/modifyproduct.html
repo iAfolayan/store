@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Store Manager | Admin </title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <div class="bodyWrapper">
+    <div class="sidebar">
+      <div id="logo"></div>
+      <h3>Welcome! iAfolayan</h3>
+      <hr>
+      <nav> 
+        <ul>
+          <li><a href="admin.html">Home</a></li>
+          <li id="usrManagement">User Management
+            <div class="usrChild">
+              <ul>
+                <li><a href="createsaleattendant.html" title="Create new User">Create new User</a></li>
+                <li><a href="viewsalerecord.html" title="View Sales Record">View Sale Records</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="prdManagement">Product Management
+            <div class="prdChild">
+              <ul>
+                <li><a href="createproduct.html" title="Create new Product">Create new product</a></li>
+                <li><a href="modifyproduct.html" title="Modify Product">Modify product</a></li>
+              </ul>
+            </div>
+          </li>
+          <li id="rptManagement">Report Management
+            <div class="rptChild">
+              <ul>
+                <li><a href="saleCreatedReport.html" title="Create new Product">Sale Record</a></li>
+                <li><a href="productReport.html" title="Modify Product">Products Sold</a></li>
+                <li><a href="worthReport.html" title="Modify Product">Worth of Goods Sold</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mainPage">
+      <div class="mainHeader">
+        
+        <div class="searchForm">
+
+          <div class="mobileMenu">
+            <img src="../assets/images/menu.png" title="Menu" alt="">
+          </div>
+
+          <form action="#" method="POST" >
+            <input type="search" name="" value="" placeholder="Search key" class="formInput">
+            <input type="submit" name="" class="searchButton" value="Go!">
+          </form>
+        </div>
+
+      </div>  
+      <div id="menuDrop" class="menuDropContent">
+        <div id="logo"></div><hr />
+        <a href="admin.html" title="Home page">Home</a>
+        <a href="createsaleattendant.html" title="Create new User">Create new User</a>
+        <a href="viewsalerecord.html" title="View Sales Record">View Sale Records</a>
+        <a href="createproduct.html" title="Create new Product">Create new product</a>
+        <a href="modifyproduct.html" title="Modify Product">Modify product</a>
+        <a href="saleCreatedReport.html" title="Create new Product">Sale Record</a>
+        <a href="productReport.html" title="Modify Product">Products Sold</a>
+        <a href="worthReport.html" title="Modify Product">Worth of Goods Sold</a>
+      </div>
+
+      <div class="modifyProduct">
+        <h3>Modify Product</h3>
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-button">×</span>
+                <h1>Are you sure you want to delete this product?</h1>
+                <section>
+                  <button class="deleteBtn" data-respone="yes">Yes</button>
+                  <button class="editBtn" data-respone="yes">No</button>
+                </section>
+            </div>
+        </div>
+        <div class="tableContainer">
+          <table class="tblDisplay" border="1" cellpadding="10" cellspacing="5">
+          <thead>
+            <tr>
+              <th>S/N</th>
+              <th>PRODUCT NAME</th>
+              <th>Category</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th> M. Qty</th>
+              <th>In stock</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>Wireless Speaker</td>
+              <td>Phone</td>
+              <td>&#8358;2500</td>
+              <td>250</td>
+              <td>23</td>
+              <td>240</td>
+              <td>
+                <a href="editProduct.html">
+                  <button class="editBtn modifyBtn">Edit </button>
+                </a>
+                  <button class="deleteBtn trigger modifyBtn">Delete</button>
+              </td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>Phone</td>
+              <td>Phone Accessory</td>
+              <td>&#8358;2500</td>
+              <td>250</td>
+              <td>20</td>
+              <td>250</td>
+              <td>
+                  <a href="editProduct.html">
+                    <button class="editBtn modifyBtn">Edit </button>
+                  </a>
+                    <button class="deleteBtn trigger modifyBtn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>Laptop</td>
+              <td>Laptop</td>
+              <td>&#8358;75000</td>
+              <td>250</td>
+              <td>1</td>
+              <td>240</td>
+              <td>
+                  <a href="editProduct.html">
+                    <button class="editBtn modifyBtn">Edit </button>
+                  </a>
+                    <button class="deleteBtn trigger modifyBtn">Delete</button>
+                </td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>Wireless Speaker</td>
+              <td>Phone</td>
+              <td>&#8358;2500</td>
+              <td>250</td>
+              <td>23</td>
+              <td>240</td>
+              <td>
+                  <a href="editProduct.html">
+                    <button class="editBtn modifyBtn">Edit </button>
+                  </a>
+                    <button class="deleteBtn trigger modifyBtn">Delete</button>
+                </td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      
+      </div>    
+      <div class="clearAll"></div>
+      <footer>
+        <hr>
+        @ 2018 - Andela Developer Challenge
+      </footer>
+    
+    </div>
+  </div>
+  <script type="text/javascript" src="../assets/js/script.js"></script>
+</body>
+</html>
